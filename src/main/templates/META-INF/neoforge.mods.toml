@@ -1,0 +1,29 @@
+modLoader="javafml" #mandatory
+loaderVersion="${loader_version_range}" #mandatory
+license="${mod_license}"
+
+[[mods]] #mandatory
+modId="${mod_id}" #mandatory
+version="${mod_version}" #mandatory
+displayName="${mod_name}" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/turf"
+logoFile="logo.png"
+credits="Quark for inspiration, DarkCow for the idea of dying them"
+authors="Lykrast"
+description='''
+Turf blocks which are non decaying grass on all sides, for decoration. Can be dyed and made into stairs, slabs and walls.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

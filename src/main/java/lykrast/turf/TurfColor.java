@@ -1,9 +1,7 @@
 package lykrast.turf;
 
-import org.jetbrains.annotations.Nullable;
-
 import net.minecraft.world.level.material.MapColor;
-import net.minecraftforge.fml.ModList;
+import net.neoforged.fml.ModList;
 
 public enum TurfColor {
 	//2 reasons: easily add the modded dyes, and also I want the textureDiffuseColors from the vanilla dyes
@@ -28,7 +26,7 @@ public enum TurfColor {
 	BLACK("black", 1908001, MapColor.COLOR_BLACK);
 
 	private final String name;
-	@Nullable private final String requiredMod;
+	private final String requiredMod;
 	private final int color;
 	private final MapColor matColor;
 

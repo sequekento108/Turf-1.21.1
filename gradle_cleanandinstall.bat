@@ -1,1 +1,1 @@
-gradlew clean eclipse genEclipseRuns
+gradlew clean build
